@@ -50,6 +50,7 @@ module.exports = {
         "no-unused-expressions": "off",
         "operator-linebreak": "off",
         "no-else-return": "off",
+        "no-restricted-globals": "off",
         "no-restricted-imports": [
             "error",
             {
