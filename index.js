@@ -10,11 +10,19 @@ module.exports = {
         "airbnb",
         "plugin:react/recommended",
         "plugin:jsx-a11y/recommended",
-        "plugin:react-hooks/recommended"],
-    plugins: ["react", "react-hooks", "jsx-a11y"],
+        "plugin:react-hooks/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended"],
+    plugins: [
+        "react",
+        "react-hooks",
+        "jsx-a11y",
+        "prettier"],
+    parser: "@typescript-eslint/parser",
     parserOptions: {
         ecmaVersion: 12,
         sourceType: "module",
+        project: "./tsconfig.json"
     },
     rules: {
         // import
@@ -29,6 +37,10 @@ module.exports = {
         "react/self-closing-comp": "off",
         "react/jsx-curly-brace-presence": "off",
         "react/jsx-one-expression-per-line": "off",
+        "react/jsx-no-bind": ["error", {
+            "allowFunctions": true,
+            "allowArrowFunctions": true
+        }],
 
         // react-hooks
         "react-hooks/exhaustive-deps": "off",
@@ -37,6 +49,13 @@ module.exports = {
         "jsx-a11y/click-events-have-key-events": "off",
         "jsx-a11y/no-noninteractive-element-interactions": "off",
         "jsx-a11y/no-static-element-interactions": "off",
+        "jsx-a11y/label-has-associated-control": "off",
+
+        // typescript
+        "@typescript-eslint/no-unused-expressions": "off",
+
+        // prettier
+        "prettier/prettier": "error",
 
         // common
         "one-var": "off",
