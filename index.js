@@ -59,7 +59,7 @@ module.exports = {
 
         // common
         "one-var": "off",
-        "indent": ["error", 2],
+        "indent": ["error", 2, { "SwitchCase": 1 }],
         "space-in-paren": "off",
         "sort-import": "off",
         "no-unused-vars": "off",
