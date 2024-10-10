@@ -59,7 +59,13 @@ module.exports = {
 
         // common
         "one-var": "off",
-        "indent": ["error", 2, { "SwitchCase": 1 }],
+        "indent": [
+            "error",
+            2,
+            {
+                "SwitchCase": 1,
+                "ignoredNodes": ["ConditionalExpression *"]
+            }],
         "space-in-paren": "off",
         "sort-import": "off",
         "no-unused-vars": "off",
