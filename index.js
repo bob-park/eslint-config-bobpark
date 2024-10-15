@@ -78,7 +78,9 @@ module.exports = {
         "no-restricted-imports": [
             "error",
             {
-                "patterns": ["^(..)*"],
+                "patterns": [
+                    "../*"
+                ],
                 "paths": [
                     {
                         "name": "react",
