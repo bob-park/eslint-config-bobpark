@@ -10,12 +10,10 @@ module.exports = {
         "airbnb",
         "plugin:react/recommended",
         "plugin:jsx-a11y/recommended",
-        "plugin:react-hooks/recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:prettier/recommended"],
     plugins: [
         "react",
-        "react-hooks",
         "jsx-a11y",
         "prettier"],
     parser: "@typescript-eslint/parser",
