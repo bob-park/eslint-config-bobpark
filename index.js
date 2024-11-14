@@ -1,7 +1,7 @@
 // index.js
 module.exports = {
     env: {
-        es2021: true,
+        es2024: true,
         node: true,
         browser: true,
     },
@@ -92,7 +92,10 @@ module.exports = {
             }
         ],
         "prefer-destructuring": "off",
-        "no-param-reassign": "off"
+        "no-param-reassign": "off",
+        "no-plusplus":"off",
+        "no-await-in-loop": "off",
+        "no-restricted-syntax": "off"
     }
 
 };
