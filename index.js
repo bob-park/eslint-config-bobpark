@@ -50,6 +50,7 @@ module.exports = {
         "jsx-a11y/label-has-associated-control": "off",
         "jsx-a11y/media-has-caption": "off",
         "jsx-a11y/no-autofocus": "off",
+        "jsx-a11y/no-noninteractive-tabindex": "off",
 
         // typescript
         "@typescript-eslint/no-unused-expressions": "off",
