@@ -1,5 +1,8 @@
 module.exports = {
     rules: {
+        // rushstack
+        "@rushstack/typedef-var": "off",
+
         // jsx-a11y
         "jsx-a11y/click-events-have-key-events": "off",
         "jsx-a11y/no-noninteractive-element-interactions": "off",
@@ -47,6 +50,7 @@ module.exports = {
         "no-param-reassign": "off",
         "no-plusplus": "off",
         "no-await-in-loop": "off",
-        "no-restricted-syntax": "off"
+        "no-restricted-syntax": "off",
+        "promise/param-names": "off"
     }
 }
