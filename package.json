@@ -1,6 +1,6 @@
 {
   "name": "@bob-park/eslint-config-bobpark",
-  "version": "0.1.2-rc-003",
+  "version": "0.1.2-rc-005",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {

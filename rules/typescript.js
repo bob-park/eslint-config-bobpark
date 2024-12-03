@@ -19,6 +19,6 @@ module.exports = {
         format: ["PascalCase"],
       },
     ],
-    "@typescript-eslint/ no-floating-promises": "warn",
+    "@typescript-eslint/no-floating-promises": "warn",
   },
 };
