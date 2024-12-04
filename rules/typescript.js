@@ -3,7 +3,7 @@ module.exports = {
     "@typescript-eslint/ban-types": "off",
     "@typescript-eslint/no-unused-expressions": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
-
+    "@typescript-eslint/no-use-before-define": "off",
     "@typescript-eslint/naming-convention": [
       "warn",
       {
