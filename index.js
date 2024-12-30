@@ -8,6 +8,7 @@ module.exports = {
   extends: [
     "next",
     "@rushstack/eslint-config/profile/web-app",
+    "@rushstack/eslint-config/mixins/react",
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:@typescript-eslint/recommended",
@@ -23,9 +24,8 @@ module.exports = {
   plugins: ["react", "jsx-a11y", "prettier"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
-    ecmaVersion: 12,
     sourceType: "module",
-    project: "./tsconfig.json",
+    tsconfigRootDir: ".",
   },
   ignorePatterns: [
     "**/*.config.js",
@@ -34,5 +34,12 @@ module.exports = {
     "**/*.config.cjs",
     "**/*.config.mjs",
   ],
+
+  settings: {
+    react: {
+      version: "18",
+    },
+  },
+
   rules: {},
 };
