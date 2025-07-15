@@ -1,4 +1,4 @@
-# eslint-config-bob-park 
+# eslint-config-bobpark 
 이것은 `Bob Park` 의 eslint 9 을 적용한 Shared Configuration Repository 이다.
 
 ## 적용 된 것
