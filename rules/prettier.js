@@ -1,6 +1,4 @@
-module.exports = {
-    rules: {
-        // prettier
-        "prettier/prettier": "error",
-    }
-}
+export default {
+  // prettier
+  "prettier/prettier": "error",
+};

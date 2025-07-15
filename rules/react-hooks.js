@@ -1,6 +1,4 @@
-module.exports = {
-    rules: {
-        // react-hooks
-        "react-hooks/exhaustive-deps": "off",
-    }
-}
+export default {
+  // react-hooks
+  "react-hooks/exhaustive-deps": "off",
+};
