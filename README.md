@@ -19,6 +19,10 @@
 
 
 ## 적용 예시
+```bash
+yarn add eslint --dev
+```
+
 ```javascript
 // eslint.config.mjs
 import { defineConfig } from "eslint/config";
