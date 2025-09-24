@@ -61,6 +61,7 @@ export default [
       ecmaVersion: 2024,
       globals: {
         ...globals.browser,
+        React: "readonly",
       },
     },
     rules: {

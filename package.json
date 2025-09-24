@@ -1,6 +1,6 @@
 {
   "name": "@bob-park/eslint-config-bobpark",
-  "version": "0.2.3-RC10-20250924",
+  "version": "0.2.4-RC1-20250924",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
@@ -31,5 +31,5 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "packageManager": "yarn@4.9.4"
+  "packageManager": "yarn@4.10.3"
 }
