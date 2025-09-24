@@ -1,3 +1,4 @@
+import globals from "globals";
 import { fileURLToPath } from "url";
 import { FlatCompat } from "@eslint/eslintrc";
 
@@ -47,6 +48,7 @@ export default [
       "**/*.config.cjs",
       "**/*.config.mjs",
       "**/*.config.ts",
+      "*-env.d.ts",
     ],
 
     languageOptions: {
@@ -58,7 +60,7 @@ export default [
       },
       ecmaVersion: 2024,
       globals: {
-        React: "readonly",
+        ...globals.browser,
       },
     },
     rules: {

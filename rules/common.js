@@ -13,14 +13,7 @@ export default {
 
   // common
   "one-var": "off",
-  indent: [
-    "error",
-    2,
-    {
-      SwitchCase: 1,
-      ignoredNodes: ["ConditionalExpression *"],
-    },
-  ],
+  indent: "off",
   "space-in-paren": "off",
   "sort-import": "off",
   "no-unused-vars": "off",
