@@ -30,7 +30,6 @@ const compat = new FlatCompat({
 /** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
   js.configs.recommended,
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
     // 플러그인 정의
     plugins: {
