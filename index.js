@@ -5,7 +5,6 @@ import { FlatCompat } from "@eslint/eslintrc";
 import js from "@eslint/js";
 import * as path from "path";
 import reactPlugin from "eslint-plugin-react";
-import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
 import tsPlugin from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
 import prettierPlugin from "eslint-plugin-prettier";
@@ -46,7 +45,6 @@ export default [
     // 플러그인 정의
     plugins: {
       react: reactPlugin,
-      "jsx-a11y": jsxA11yPlugin,
       "@typescript-eslint": tsPlugin,
       prettier: prettierPlugin,
       "@tanstack/query": tanstackQueryPlugin,
