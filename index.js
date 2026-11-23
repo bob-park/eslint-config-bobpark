@@ -9,7 +9,7 @@ import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
 import tsPlugin from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
 import prettierPlugin from "eslint-plugin-prettier";
-import rushstackConfig from "@rushstack/eslint-config/flat/profile/web-app.js";
+import rushstackConfig from "@rushstack/eslint-config/flat/profile/web-app";
 import tanstackQueryPlugin from "@tanstack/eslint-plugin-query";
 
 // rules
@@ -27,9 +27,21 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
+// rushstack 은 자체 @typescript-eslint 플러그인 인스턴스를 들고 있어서, 그대로 쓰면
+// 아래 블록과 "Cannot redefine plugin" 충돌이 난다. 우리 쪽 인스턴스로 통일한다.
+const rushstack = rushstackConfig.map((config) =>
+  config.plugins?.["@typescript-eslint"]
+    ? {
+        ...config,
+        plugins: { ...config.plugins, "@typescript-eslint": tsPlugin },
+      }
+    : config,
+);
+
 /** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
   js.configs.recommended,
+  ...rushstack,
   {
     // 플러그인 정의
     plugins: {
@@ -38,7 +50,6 @@ export default [
       "@typescript-eslint": tsPlugin,
       prettier: prettierPlugin,
       "@tanstack/query": tanstackQueryPlugin,
-      rushstackConfig,
     },
 
     files: ["**/*.{js,cjs,mjs,ts,tsx}"],
